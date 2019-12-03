@@ -56,22 +56,22 @@ namespace BrixTest
             //with direct access plus sorting gives us the option to use COTAINSKEY which is a quick search method
             //The complexity is O(1) Because there is no difference in the amount of data
 
-            //Dictionary<String, String> ldapDocument = new Dictionary<String, String>();
-            ////load your list here
-            //ldapDocument.Add(SortString("BDSCA"), "BDSCA");
-            //ldapDocument.Add(SortString("FCDPO"), "FCDPO");
-            //ldapDocument.Add(SortString("ABCCD"), "ABCCD");
-            //ldapDocument.Add(SortString("BDSAB"), "BDSAB");
-            //Console.WriteLine("Insert String");
-            //string dataInsert = Console.ReadLine();
-            //if (ldapDocument.ContainsKey(SortString(dataInsert)))
-            //{
-            //    Console.WriteLine(" the string " + dataInsert + " was found ");
-            //}
-            //else
-            //{
-            //    Console.WriteLine(" the string " + dataInsert + " was Not Found ");
-            //}
+            Dictionary<String, String> ldapDocument = new Dictionary<String, String>();
+            //load your list here
+            ldapDocument.Add(SortString("BDSCA"), "BDSCA");
+            ldapDocument.Add(SortString("FCDPO"), "FCDPO");
+            ldapDocument.Add(SortString("ABCCD"), "ABCCD");
+            ldapDocument.Add(SortString("BDSAB"), "BDSAB");
+            Console.WriteLine("Insert String");
+            string dataInsert = Console.ReadLine();
+            if (ldapDocument.ContainsKey(SortString(dataInsert)))
+            {
+                Console.WriteLine(" the string " + dataInsert + " was found ");
+            }
+            else
+            {
+                Console.WriteLine(" the string " + dataInsert + " was Not Found ");
+            }
         }
 
         /// <summary>
